@@ -65,21 +65,21 @@ body {
 /* Style the header */
 .header {
     background-image: url("pattern.png");
-    background-repeat: repeat-x;
     padding: 0px 0px;
     margin: 0px;
     text-align: center;
     font-family: 'Bungee Inline', cursive;
     color: #EDF2F4;
-    font-size: 2vw;
+
+    
     
 }
 
 .head {
-    overflow: hidden;
     padding: 0px;
     margin: 0px;
-    max-width: 100%;
+    height: auto;
+    font-size: 3vw;
 }
 
 /* Style the top navigation bar */
@@ -87,7 +87,7 @@ body {
     overflow: hidden;
     margin: 0px;
     background-color: #2B2D42;
-    font-family: Roboto
+    font-family: Roboto;
 }
 
 /* Style the topnav links */
@@ -104,4 +104,21 @@ body {
 .topnav a:hover {
     background-color: #EDF2F4;
     color: #2B2D42;
+}
+
+.footer {
+    background-color: #2B2D42;
+    overflow: hidden;
+}
+
+.parallax {
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
