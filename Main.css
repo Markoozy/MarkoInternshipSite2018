@@ -6,6 +6,7 @@ a#twitter:link {
     background-color: #1DA1F2;
     color: white;
     padding: 14px 25px;
+    margin: 10px;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
@@ -79,19 +80,20 @@ body {
     padding: 0px;
     margin: 0px;
     height: auto;
-    font-size: 3vw;
+    font-size: 48px;
+    white-space: pre;
 }
 
 /* Style the top navigation bar */
-.topnav {
+#navbar {
     overflow: hidden;
     margin: 0px;
     background-color: #2B2D42;
     font-family: Roboto;
 }
 
-/* Style the topnav links */
-.topnav a {
+/* Style the navbar links */
+#navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -101,7 +103,7 @@ body {
 }
 
 /* Change color on hover */
-.topnav a:hover {
+#navbar a:hover {
     background-color: #EDF2F4;
     color: #2B2D42;
 }
@@ -121,4 +123,31 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homebody {
+    height: 500px;
+    background-color:#2B2D42;
+    color: #EDF2F4;
+    text-align: center;
+    font-size:24px;
+    font-family: Roboto;
+    padding:24px;
+    
+}
+
+h1 a {
+
+    text-decoration: none;
+    color:inherit;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.sticky + .parallax {
+    padding-top: 49px;
 }

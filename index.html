@@ -6,34 +6,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="Main.css">
         <title>Marko Djurdjevic Home Page</title>
+
+        
+
     </head>
-    <body style="background-color:#EDF2F4">
+    <body>
 
         <div class="header">
-            <h1 class="head">Marko Djurdjevic: A Life</h1>
+            <h1 class="head"><a href="index.html">Marko Djurdjevic: A Life</a></h1>
         </div>
                   
-        <div class="topnav">
+        <div id="navbar">
             <a href="index.html">Home</a>
-            <a href="#">About</a>
+            <a href="#">Gallery</a>
             <a href="Contact.html">Contact</a>
         </div>
 
         <div class="parallax" style="background-image: url('hands.jpg')"></div>
 
-        <div style="height:1000px;background-color:#2B2D42;font-size:36px">
-                Scroll Up and Down this page to see the parallax scrolling effect.
-                This div is just here to enable scrolling.
-                Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        <div class="homebody">
+                About Me<br><br>
+
+                I was born in Atlanta, Georgia to Nikola Djurdjevic and Dragana Obradovic. I only lived there for two years, so I have no memory of the place.
+
         </div>
 
         <div class="parallax" style="background-image: url('horizon.jpg')"></div>
-
-        <div style="height:1000px;background-color:#2B2D42;font-size:36px">
-                Scroll Up and Down this page to see the parallax scrolling effect.
-                This div is just here to enable scrolling.
-                Tip: Try to remove the background-attachment property to remove the scrolling effect.
-        </div>
 
         <div class="footer">
 
@@ -41,6 +39,21 @@
             <a id="youtube" target="_blank" href="https://www.youtube.com/channel/UCSR6O3xZpla6YgwWlh-ON9w/featured?disable_polymer=1"><i class="fa fa-youtube-square"></i> Youtube</a>
 
         </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
 
     </body>
 </html>
