@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="Main.css">
-        <title>Marko Djurdjevic Home Page</title>
+        <title>Marko Djurdjevic Testing</title>
 
         
 
@@ -23,17 +23,11 @@
             <a href="Testing.html">Testing</a>
         </div>
 
-        <div class="parallax" style="background-image: url('hands.jpg')"></div>
-
-        <div class="homebody">
-                About Me<br><br>
-
-                I was born in Atlanta, Georgia to Nikola Djurdjevic and Dragana Obradovic. I only lived there for two years, so I have no memory of the place.
-
+        <div class="fortuneDiv">
+            <p id="fortune">Click the button below to see your fortune.</p>
+            <button class="fortuneButton" onclick="tellFortune()">Click Me!</button>
         </div>
-
-        <div class="parallax" style="background-image: url('horizon.jpg')"></div>
-
+        
         <div class="footer">
 
             <a id="twitter" target="_blank" href="https://twitter.com/MajorMarkoozy"><i class="fa fa-twitter"></i> Twitter</a>
@@ -56,7 +50,16 @@
             }
         </script>
 
-     
+        <script>
+        
+        function tellFortune() {
+            var fortunes = ["You will meet a loved one today", "Your fate will soon be revealed", "It will be a rather lovely day today"];
+            var choice = Math.floor(Math.random() * (fortunes.length));
+            var choiceFortune = fortunes[choice];
+            document.getElementById("fortune").innerHTML = choiceFortune;
+        }
+        
+        </script>
 
     </body>
 </html>
